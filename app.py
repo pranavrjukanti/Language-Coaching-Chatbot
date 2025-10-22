@@ -6,7 +6,7 @@ from PIL import Image
 st.set_page_config(page_title="Language Coaching Chatbot",page_icon="💬")
 
 st.sidebar.title("Language Coaching Chatbot")
-page=st.sidebar.selectbox("Navigation",["Home","Grammar Checker"])
+page=st.sidebar.radio("Navigation",["Home","Grammar Checker"])
 if page=="Home":
         
     img=Image.open("chatbot.png")
