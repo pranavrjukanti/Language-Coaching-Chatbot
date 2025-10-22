@@ -7,6 +7,7 @@ st.set_page_config(page_title="Language Coaching Chatbot",page_icon="💬")
 
 st.sidebar.title("Language Coaching Chatbot")
 page=st.sidebar.radio("Navigation",["Home","Grammar Checker"])
+##Historical data
 if page=="Home":
         
     img=Image.open("chatbot.png")
