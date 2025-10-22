@@ -5,18 +5,26 @@ from PIL import Image
 
 st.set_page_config(page_title="Language Coaching Chatbot",page_icon="💬")
 
-img=Image.open("chatbot.png")
-st.image(img)
+st.sidebar.title("Language Coaching Chatbot")
+page=st.sidebar.selectbox("Navigation",["Home","Grammar Checker"])
+if page=="Home":
+        
+    img=Image.open("chatbot.png")
+    st.image(img)
 
-st.markdown(
-    """
-# Language Coaching Chatbot
-Your personal AI-powered language coach — here to help you practice, learn, and improve anytime, anywhere.
-Whether you’re mastering pronunciation, building vocabulary, or preparing for real-world conversations, our chatbot adapts to your level and goals.
-- Practice natural dialogue
-- Get instant feedback and corrections
-- Get guided feedback and step-by-step milestones toward fluency
+    st.markdown(
+        """
+    # Language Coaching Chatbot
+    Your personal AI-powered language coach — here to help you practice, learn, and improve anytime, anywhere.
+    Whether you’re mastering pronunciation, building vocabulary, or preparing for real-world conversations, our chatbot adapts to your level and goals.
+    - Practice natural dialogue
+    - Get instant feedback and corrections
+    - Get guided feedback and step-by-step milestones toward fluency
 
-    """
-)
-grammer_ui()
+        """
+    )
+if page=="Grammar Checker":
+
+    grammer_ui()
+
+
