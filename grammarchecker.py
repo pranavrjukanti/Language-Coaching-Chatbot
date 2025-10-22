@@ -34,7 +34,11 @@ def grammer_ui():
                 if result.get("errors"):
                     st.markdown("### Errors Found")
                     for error in result["errors"]:
-                        st.write(f"- {error['type']}: '{error['original']}' -> '{error['correction']}' (Position: {error['position']})")
+                        st.markdown(f"""
+                        **{error.get('type', 'Error')}**  
+                        `{error.get('original')}` → `{error.get('corrected')}`  
+                        *Explanation*: {error.get('explanation')}
+                        """)
 
                 if result.get("notes"):
                     st.markdown("### Additional Notes")
