@@ -3,7 +3,10 @@ import random
 from utils import language_corrector
 import streamlit as st
 
-x=random.randint(1,1000)
+word=["Exploring","Reviewing","Analyzing","Understanding","Correcting","Enhancing","Refining","Improving","Polishing","Evaluating"]
+
+
+
 def grammer_ui():
     st.title("Grammer Checker")
     st.write("Description")
@@ -12,7 +15,7 @@ def grammer_ui():
         if not user_input.strip():
             st.warning("Please Enter text")
         else:
-            with st.spinner("Analyzing"):
+            with st.spinner(random.choice(word)):
                 result = language_corrector(user_input)
             if "error" in result:
                 st.error(f"Error: {result['error']}")
