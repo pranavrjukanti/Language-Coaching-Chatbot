@@ -3,9 +3,9 @@ from grammarchecker import grammer_ui
 from PIL import Image
 ##from grammarchecker import grammar_ui
 
-st.set_page_config(page_title="Language Coaching Chatbot",page_icon="💬")
+st.set_page_config(page_title="PhraseCraft",page_icon="💬")
 
-st.sidebar.title("Language Coaching Chatbot")
+st.sidebar.title("PhraseCraft")
 page=st.sidebar.radio("Navigation",["Home","Grammar Checker"])
 ##Historical data
 if page=="Home":
