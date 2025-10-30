@@ -15,7 +15,7 @@ if page=="Home":
 
     st.markdown(
         """
-    # Language Coaching Chatbot
+    # PhraseCraft
     Your personal AI-powered language coach — here to help you practice, learn, and improve anytime, anywhere.
     Whether you’re mastering pronunciation, building vocabulary, or preparing for real-world conversations, our chatbot adapts to your level and goals.
     - Practice natural dialogue
